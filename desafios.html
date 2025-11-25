@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafíos de Cocina | El Sabor de la Casa</title>
+    <meta name="description"
+        content="Participa en los desafíos de cocina 'El Sabor de la Casa'. Compite por premios y demuestra tus habilidades culinarias.">
+    <meta name="keywords" content="desafíos, cocina, concurso, retos culinarios, repostería, recetas">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Categorías</a></li>
+                    <li><a href="receta-x.html">Recetas</a></li>
+                    <li><a href="desafios.html" aria-current="page">Desafíos</a></li>
+                    <li><a href="suscripcion-premium.html" class="cta-premium-link"><i class="fas fa-lock"
+                                aria-hidden="true"></i> Premium</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="page-intro" aria-labelledby="desafios-title">
+
+            <div class="intro-wrapper">
+                <h1 id="desafios-title" class="intro-title">Desafíos de Cocina: ¡Pon a Prueba tus Habilidades!</h1>
+                <p class="intro-subtitle">
+                    ¡Demuestra que tienes el sabor de la casa!
+                </p>
+                <p class="intro-text">
+                    Participa en nuestros desafíos culinarios exclusivos. Cocina, comparte tu plato y compite por
+                    premios de
+                    "Chef Pro".
+                </p>
+            </div>
+
+        </section>
+
+        <section class="featured-challenge-banner" aria-label="Desafío de la Semana: Postres Veganos">
+            <div class="banner-text-content">
+                <span class="banner-tag">✨ Desafío de la Semana ✨</span>
+                <h2>El Reto Vegano: Postres sin Fronteras</h2>
+                <p>Crea el postre 100% vegano más delicioso y creativo. El jurado evaluará sabor, presentación e
+                    innovación. El desafío cierra en solo 3 días.</p>
+                <div class="banner-meta">
+                    <span><i class="fas fa-signal" aria-hidden="true"></i> Dificultad: Media</span>
+                    <span><i class="fas fa-trophy" aria-hidden="true"></i> Premio: $100 usd</span>
+                    <span><i class="fas fa-clock" aria-hidden="true"></i> Cierre: 3 Días</span>
+                </div>
+                <a href="desafio-detalle.html" class="cta cta-lg cta-featured">¡Últimos Días! Participar</a>
+            </div>
+            <figure class="banner-figure">
+                <img src="https://veggiefestchicago.org/wp-content/uploads/2021/04/21-carrot-cake.jpg"
+                    alt="Tarta vegana con frutas frescas, elegante y colorida.">
+            </figure>
+        </section>
+
+        <hr class="separator" aria-hidden="true">
+
+        <section class="challenges-overview" aria-labelledby="challenges-overview-title">
+            <h2 id="challenges-overview-title" class="section-title">Todos los Desafíos Activos y Pasados</h2>
+            <p class="section-subtitle">Filtra y descubre tu próximo reto culinario.</p>
+
+            <section class="challenge-group active-challenges" aria-labelledby="active-challenges-title">
+                <h3 id="active-challenges-title" class="section-title-small">🔥 Retos Activos</h3>
+
+                <div class="challenges-grid">
+
+                    <article class="challenge-card active-challenge featured-challenge"
+                        aria-label="Desafío El Reto Vegano: Postres sin Fronteras">
+                        <a href="desafio-detalle.html" class="challenge-link-wrapper">
+                            <figure class="challenge-figure">
+                                <img src="https://veggiefestchicago.org/wp-content/uploads/2021/04/21-carrot-cake.jpg"
+                                    alt="Tarta vegana con frutas frescas, elegante y colorida." loading="lazy">
+                                <span class="challenge-status timer-running"><i class="fas fa-hourglass-half"
+                                        aria-hidden="true"></i> Cierre en: 3 Días</span>
+                            </figure>
+                            <div class="challenge-content">
+                                <div class="challenge-meta">
+                                    <span class="meta-item tag-dificultad tag-media"><i class="fas fa-signal"
+                                            aria-hidden="true"></i> Media</span>
+                                    <span class="meta-item tag-premio"><i class="fas fa-trophy" aria-hidden="true"></i>
+                                        $100 USD</span>
+                                </div>
+                                <h4 class="card-title">El Reto Vegano: Postres sin Fronteras</h4>
+                                <p class="card-description">Crea el postre 100% vegano más delicioso. Se evaluará sabor,
+                                    presentación e innovación.</p>
+                                <span class="cta cta-card cta-participar">Participar Ahora</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="challenge-card active-challenge"
+                        aria-label="Desafío Cena Flash: Plato Principal en 20 Minutos">
+                        <a href="desafio-detalle.html" class="challenge-link-wrapper">
+                            <figure class="challenge-figure">
+                                <img src="https://nococinomas.es/blog/wp-content/uploads/2020/09/12.webp"
+                                    alt="Plato de pasta rápida y fresca." loading="lazy">
+                                <span class="challenge-status timer-running"><i class="fas fa-hourglass-half"
+                                        aria-hidden="true"></i> Cierre en: 7 Días</span>
+                            </figure>
+                            <div class="challenge-content">
+                                <div class="challenge-meta">
+                                    <span class="meta-item tag-dificultad tag-facil"><i class="fas fa-signal"
+                                            aria-hidden="true"></i> Fácil</span>
+                                    <span class="meta-item tag-premio"><i class="fas fa-star" aria-hidden="true"></i>
+                                        Receta Destacada</span>
+                                </div>
+                                <h4 class="card-title">Cena Flash: Plato Principal en 20 Minutos</h4>
+                                <p class="card-description">Presenta un plato principal nutritivo y sabroso, ¡sin
+                                    superar los 20 minutos de preparación!</p>
+                                <span class="cta cta-card cta-participar">Participar Ahora</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="challenge-card active-challenge premium-challenge"
+                        aria-label="Desafío Tarta Clásica">
+                        <a href="suscripcion-premium.html" class="challenge-link-wrapper">
+                            <figure class="challenge-figure">
+                                <img src="img/tarta-de-manzana.webp" alt="Tarta de manzana con rejilla de masa."
+                                    loading="lazy">
+                                <span class="challenge-status status-premium-lock"><i class="fas fa-lock"
+                                        aria-hidden="true"></i> Chef Pro</span>
+                            </figure>
+                            <div class="challenge-content">
+                                <div class="challenge-meta">
+                                    <span class="meta-item tag-dificultad tag-media"><i class="fas fa-signal"
+                                            aria-hidden="true"></i> Media</span>
+                                    <span class="meta-item tag-premio"><i class="fas fa-gem" aria-hidden="true"></i>
+                                        Clase Magistral</span>
+                                </div>
+                                <h3 class="card-title">La Repostería Fina: Tarta de Manzana</h3>
+                                <p class="card-description">Desafío exclusivo. Recrear una tarta de manzana clásica con
+                                    la técnica perfecta.</p>
+                                <span class="cta cta-card cta-premium-lock">Desbloquear Reto</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="challenge-group finished-challenges" aria-labelledby="finished-challenges-title">
+                <h3 id="finished-challenges-title" class="section-title-small">🏆 Retos Pasados (Ganadores)</h3>
+
+                <div class="challenges-grid">
+
+                    <article class="challenge-card finished-challenge" aria-label="Desafío de Pan Artesanal">
+                        <a href="desafio-detalle-ganador.html" class="challenge-link-wrapper">
+                            <figure class="challenge-figure">
+                                <img src="img/maxresdefault.jpg" alt="Pan artesanal con corteza gruesa y crujiente."
+                                    loading="lazy">
+                                <span class="challenge-status status-finished"><i class="fas fa-check-circle"
+                                        aria-hidden="true"></i> Finalizado</span>
+                            </figure>
+                            <div class="challenge-content">
+                                <div class="challenge-meta">
+                                    <span class="meta-item tag-dificultad tag-dificil"><i class="fas fa-signal"
+                                            aria-hidden="true"></i> Difícil</span>
+                                    <span class="meta-item tag-ganador"><i class="fas fa-medal" aria-hidden="true"></i>
+                                        Ganador: Ana G.</span>
+                                </div>
+                                <h4 class="card-title">El Arte de la Fermentación: Pan Artesanal</h4>
+                                <p class="card-description">La búsqueda del pan perfecto. Se juzgó la miga, la corteza y
+                                    el uso de levadura madre.</p>
+                                <span class="cta cta-card cta-secondary-ghost">Ver Ganador</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="challenge-card finished-challenge" aria-label="Desafío Épico de Cocina Molecular">
+                        <a href="desafio-detalle-ganador.html" class="challenge-link-wrapper">
+                            <figure class="challenge-figure">
+                                <img src="img/esferificacion-portada.jpg"
+                                    alt="Plato de alta cocina molecular con esferificaciones." loading="lazy">
+                                <span class="challenge-status status-finished"><i class="fas fa-check-circle"
+                                        aria-hidden="true"></i> Finalizado</span>
+                            </figure>
+                            <div class="challenge-content">
+                                <div class="challenge-meta">
+                                    <span class="meta-item tag-dificultad tag-experto"><i class="fas fa-signal"
+                                            aria-hidden="true"></i> Experto</span>
+                                    <span class="meta-item tag-ganador"><i class="fas fa-medal" aria-hidden="true"></i>
+                                        Ganador: Chef M.</span>
+                                </div>
+                                <h4 class="card-title">Cocina Molecular: Esferificación Perfecta</h4>
+                                <p class="card-description">El reto más difícil. Se juzgó la aplicación de técnicas de
+                                    alta cocina y texturas innovadoras.</p>
+                                <span class="cta cta-card cta-secondary-ghost">Ver Ganador</span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="desafios.html" class="cta cta-secondary">Ver Archivo Histórico de Desafíos</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

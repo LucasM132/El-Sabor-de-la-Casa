@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Pro: Suscripción Premium | El Sabor de la Casa</title>
+    <meta name="description"
+        content="Desbloquea recetas exclusivas, desafíos avanzados, planificadores de menú y navegación sin publicidad con Chef Pro.">
+    <meta name="keywords"
+        content="suscripción premium, chef pro, recetas exclusivas, sin publicidad, desafíos de cocina">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Recetas</a></li>
+                    <li><a href="desafios.html">Desafíos</a></li>
+                    <li><a href="suscripcion-premium.html" class="cta-premium-link" aria-current="page"><i
+                                class="fas fa-crown" aria-hidden="true"></i> Premium</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <nav aria-label="Breadcrumb" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><span aria-current="page">Chef Pro Premium</span></li>
+                </ol>
+            </nav>
+
+            <section class="premium-hero" aria-labelledby="premium-title">
+                <h1 id="premium-title" class="main-title text-center">Conviértete en un <strong>Chef Pro</strong> ✨</h1>
+                <p class="hero-subtitle text-center">
+                    Accede al 100% de nuestras recetas, retos y herramientas. Pasa de cocinar a <strong>dominar</strong>
+                    la cocina.
+                </p>
+
+                <div class="text-center">
+                    <a href="#pricing-table" class="cta cta-lg cta-principal cta-scroll">
+                        Ver Planes y Empezar
+                    </a>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="premium-benefits" aria-labelledby="benefits-title">
+                <h2 id="benefits-title" class="section-title text-center">¿Qué obtienes con Chef Pro?</h2>
+
+                <div class="benefits-grid">
+                    <article class="benefit-card">
+                        <i class="fas fa-lock-open icon-principal" aria-hidden="true"></i>
+                        <h3>Recetas Exclusivas</h3>
+                        <p>Desbloquea la biblioteca completa de recetas de Chef Pro, incluyendo repostería fina y platos
+                            gourmet.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <i class="fas fa-trophy icon-principal" aria-hidden="true"></i>
+                        <h3>Acceso a Desafíos</h3>
+                        <p>Participa en retos culinarios semanales y compite por premios con la comunidad de cocineros
+                            avanzados.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <i class="fas fa-ad icon-principal" aria-hidden="true"></i>
+                        <h3>Experiencia sin Publicidad</h3>
+                        <p>Disfruta de la navegación más fluida. Recetas limpias, rápidas y concentradas 100% en la
+                            cocina.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <i class="fas fa-book-open icon-principal" aria-hidden="true"></i>
+                        <h3>Clases Magistrales</h3>
+                        <p>Videos y tutoriales avanzados de técnicas de cocina impartidos por chefs invitados.</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="pricing-table" class="pricing-section" aria-labelledby="pricing-title">
+                <h2 id="pricing-title" class="section-title text-center">Elige tu Plan</h2>
+
+                <div class="pricing-toggle text-center" role="radiogroup"
+                    aria-label="Selección de periodo de facturación">
+                    <button class="toggle-btn active" data-period="mensual">Facturación Mensual</button>
+                    <button class="toggle-btn" data-period="anual">Facturación Anual (¡2 Meses Gratis!)</button>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <article class="price-card basic-plan" aria-label="Plan Básico Gratuito">
+                        <span class="plan-badge">Gratuito</span>
+                        <h3>Plan Cocina Básica</h3>
+                        <p class="price-value">
+                            <span class="price-amount">$0</span>
+                            <span class="price-unit">/mes</span>
+                        </p>
+                        <p class="plan-summary">Perfecto para empezar con los clásicos.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Acceso a +500 Recetas Clásicas</li>
+                            <li><i class="fas fa-check"></i> Búsqueda y Filtros básicos</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Recetas Exclusivas</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Desafíos de Cocina</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Sin Publicidad</li>
+                        </ul>
+                        <a href="index.html" class="cta cta-secondary full-width">Mantener Gratis</a>
+                    </article>
+
+                    <article class="price-card featured-plan" aria-label="Plan Chef Pro Mensual">
+                        <span class="plan-badge featured-badge">Recomendado</span>
+                        <h3>Chef Pro Mensual</h3>
+                        <p class="price-value">
+                            <span class="price-amount">$9.99</span>
+                            <span class="price-unit">/mes</span>
+                        </p>
+                        <p class="plan-summary">Flexibilidad total. Cancelación en cualquier momento.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Acceso Total a la Biblioteca</li>
+                            <li><i class="fas fa-check"></i> <strong>Experiencia 100% sin Publicidad</strong></li>
+                            <li><i class="fas fa-check"></i> Participación en Desafíos (Con Premios)</li>
+                            <li><i class="fas fa-check"></i> Tutoriales de Técnicas Avanzadas</li>
+                            <li><i class="fas fa-check"></i> Descargas en PDF</li>
+                        </ul>
+                        <a href="checkout.html?plan=mensual" class="cta cta-principal cta-lg full-width">Suscribirse
+                            Ahora</a>
+                    </article>
+
+                    <article class="price-card annual-plan" aria-label="Plan Chef Pro Anual">
+                        <span class="plan-badge">Ahorro Máximo</span>
+                        <h3>Chef Pro Anual</h3>
+                        <p class="price-value">
+                            <span class="price-amount">$99</span>
+                            <span class="price-unit">/año</span>
+                        </p>
+                        <p class="plan-summary">Ahorra 20% respecto al plan mensual.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Acceso Total a la Biblioteca</li>
+                            <li><i class="fas fa-check"></i> <strong>Experiencia 100% sin Publicidad</strong></li>
+                            <li><i class="fas fa-check"></i> Participación en Desafíos (Con Premios)</li>
+                            <li><i class="fas fa-check"></i> Tutoriales de Técnicas Avanzadas</li>
+                            <li><i class="fas fa-check"></i> Descargas en PDF</li>
+                        </ul>
+                        <a href="checkout.html?plan=anual" class="cta cta-secondary full-width">Elegir Plan Anual</a>
+                    </article>
+
+                    <article class="price-card lifetime-plan" aria-label="Plan Chef Pro Vitalicio">
+                        <span class="plan-badge lifetime-badge">Pago Único</span>
+                        <h3>Chef Pro Vitalicio</h3>
+                        <p class="price-value">
+                            <span class="price-amount">$299</span>
+                            <span class="price-unit">/pago único</span>
+                        </p>
+                        <p class="plan-summary">Acceso ilimitado para siempre. Olvídate de las renovaciones.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Todo lo del Plan Anual</li>
+                            <li><i class="fas fa-check"></i> <strong>Acceso prioritario</strong> a eventos</li>
+                            <li><i class="fas fa-check"></i> Contenido Beta (Próximas funciones)</li>
+                            <li><i class="fas fa-check"></i> Insignia de Fundador en tu perfil</li>
+                            <li><i class="fas fa-star"></i> Acceso para siempre</li>
+                        </ul>
+                        <a href="checkout.html?plan=lifetime" class="cta cta-secondary full-width">Obtener Acceso
+                            Total</a>
+                    </article>
+
+                </div>
+
+                <div class="guarantee-box text-center">
+                    <p><i class="fas fa-shield-alt"></i> <strong>Garantía de Satisfacción:</strong> Prueba Chef Pro sin
+                        riesgos. Si no te convence en los primeros 7 días, te devolvemos tu dinero.</p>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECETA PREMIUM: Magret de Pato con Reducción de Oporto | Chef Pro</title>
+    <meta name="description"
+        content="Receta exclusiva Chef Pro: Magret de Pato sellado a la perfección con una elegante salsa de Oporto y cerezas.">
+    <meta name="keywords" content="magret de pato, oporto, receta premium, alta cocina, chef pro">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="receta-page">
+
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Recetas</a></li>
+                    <li><a href="desafios.html">Desafíos</a></li>
+                    <li><a href="suscripcion-premium.html" class="cta-premium-link"><i class="fas fa-gem"
+                                aria-hidden="true"></i> Chef Pro</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <nav aria-label="Breadcrumb" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Platos Fuertes</a></li>
+                    <li><span aria-current="page">Magret de Pato (Chef Pro)</span></li>
+                </ol>
+            </nav>
+
+            <article class="recipe-container" itemscope itemtype="http://schema.org/Recipe">
+
+                <div class="recipe-header">
+                    <div class="recipe-meta-premium-tag">
+                        <i class="fas fa-gem"></i> Receta Exclusiva **Chef Pro**
+                    </div>
+                    <h1 class="recipe-title" itemprop="name">Magret de Pato con Reducción de Oporto y Cerezas</h1>
+                    <p class="recipe-summary" itemprop="description">
+                        Un plato de alta cocina, perfecto para impresionar. La piel crujiente del pato,
+                        combinada con la acidez y dulzura del vino de Oporto, crea un balance de sabores inigualable.
+                    </p>
+
+                    <div class="rating-metadata">
+                        <div class="recipe-rating" itemprop="aggregateRating" itemscope
+                            itemtype="http://schema.org/AggregateRating">
+                            <span class="stars" aria-label="Calificación de 5 de 5 estrellas">
+                                ⭐⭐⭐⭐⭐
+                            </span>
+                            <span itemprop="ratingValue">5.0</span>
+                            de <span itemprop="bestRating">5</span> (<span itemprop="reviewCount">48</span> votos Chef
+                            Pro)
+                        </div>
+                    </div>
+
+                    <figure class="recipe-figure">
+                        <img src="img/magret-pato-oporto.jpg"
+                            alt="Magret de pato con piel crujiente servido con salsa oscura y cerezas." itemprop="image"
+                            loading="eager" width="800" height="533">
+                    </figure>
+                </div>
+
+                <div class="action-bar-float">
+                    <button id="btn-save-recipe" class="action-btn" aria-label="Guardar receta en favoritos"
+                        title="Guardar">
+                        <i class="fas fa-heart"></i> <span class="btn-text">Guardar</span>
+                    </button>
+                    <button id="btn-print-recipe" class="action-btn" aria-label="Imprimir receta" title="Imprimir">
+                        <i class="fas fa-print"></i> <span class="btn-text">Imprimir</span>
+                    </button>
+                    <button id="btn-cook-mode" class="action-btn cta-principal" aria-label="Activar Modo Cocina"
+                        title="Modo Cocina">
+                        <i class="fas fa-utensils"></i> <span class="btn-text">Modo Cocina</span>
+                    </button>
+                </div>
+
+                <div class="recipe-body-grid">
+
+                    <aside class="recipe-sidebar" role="complementary">
+
+                        <div class="recipe-times-panel">
+                            <h2>Datos Clave</h2>
+                            <div class="time-meta-item">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span class="time-label">Preparación:</span>
+                                <time itemprop="prepTime" datetime="PT15M">15 Minutos</time>
+                            </div>
+                            <div class="time-meta-item">
+                                <i class="fas fa-fire" aria-hidden="true"></i>
+                                <span class="time-label">Cocción:</span>
+                                <time itemprop="cookTime" datetime="PT25M">25 Minutos</time>
+                            </div>
+                            <div class="time-meta-item">
+                                <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+                                <span class="time-label">Total:</span>
+                                <time itemprop="totalTime" datetime="PT40M">40 Minutos</time>
+                            </div>
+
+                            <div class="servings-control">
+                                <span class="time-label">Raciones:</span>
+                                <div class="servings-input-group">
+                                    <button id="btn-decrement-servings" aria-label="Reducir raciones"
+                                        class="servings-btn">-</button>
+                                    <input type="number" id="servings-count" value="2" min="1"
+                                        data-original-servings="2" aria-live="polite" aria-label="Número de raciones">
+                                    <button id="btn-increment-servings" aria-label="Aumentar raciones"
+                                        class="servings-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ingredients-list-wrapper">
+                            <h2>Ingredientes (<span id="current-servings">2</span> Raciones)</h2>
+                            <ul id="ingredients-list" class="ingredients-list">
+                                <li itemprop="recipeIngredient" data-quantity="300" data-unit="g">300 g de Magret de
+                                    pato (1 pieza grande)</li>
+                                <li itemprop="recipeIngredient" data-quantity="1" data-unit="cucharadita">1 cucharadita
+                                    de Sal gruesa</li>
+                                <li itemprop="recipeIngredient" data-quantity="0.5" data-unit="cucharadita">1/2
+                                    cucharadita de Pimienta negra recién molida</li>
+                                <li itemprop="recipeIngredient" data-quantity="150" data-unit="ml">150 ml de Vino de
+                                    Oporto Ruby</li>
+                                <li itemprop="recipeIngredient" data-quantity="50" data-unit="ml">50 ml de Caldo de
+                                    pollo (o fondo oscuro)</li>
+                                <li itemprop="recipeIngredient" data-quantity="100" data-unit="g">100 g de Cerezas
+                                    frescas o congeladas (deshuesadas)</li>
+                                <li itemprop="recipeIngredient" data-quantity="1" data-unit="cucharada">1 cucharada de
+                                    Mantequilla fría</li>
+                                <li itemprop="recipeIngredient" data-quantity="1" data-unit="rama">1 rama de Tomillo
+                                    fresco</li>
+                            </ul>
+                        </div>
+
+                        <div class="nutrition-panel" itemprop="nutrition" itemscope
+                            itemtype="http://schema.org/NutritionInformation">
+                            <h3>Valor Nutricional (por ración)</h3>
+                            <ul class="nutrition-facts">
+                                <li><span class="fact-label">Calorías:</span> <span class="fact-value"
+                                        itemprop="calories">550 kcal</span></li>
+                                <li><span class="fact-label">Proteínas:</span> <span class="fact-value"
+                                        itemprop="proteinContent">45 g</span></li>
+                                <li><span class="fact-label">Grasas:</span> <span class="fact-value"
+                                        itemprop="fatContent">40 g</span></li>
+                                <li><span class="fact-label">Carbohidratos:</span> <span class="fact-value"
+                                        itemprop="carbohydrateContent">5 g</span></li>
+                            </ul>
+                            <p class="nutrition-note">Valores calculados por el **Algoritmo Chef Pro**.</p>
+                        </div>
+                    </aside>
+
+                    <section class="recipe-instructions">
+                        <h2 id="instructions-title">Instrucciones Paso a Paso</h2>
+
+                        <ol class="steps-list" itemprop="recipeInstructions">
+
+                            <li class="step-item" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+                                <h3 itemprop="name">1. Preparación y Marcado del Pato</h3>
+                                <div class="step-content">
+                                    <p itemprop="text">Realiza cortes en diagonal sobre la piel del magret (sin cortar
+                                        la carne) en forma de rombos. Esto ayuda a liberar la grasa. Sazona
+                                        generosamente la piel con sal gruesa y pimienta negra recién molida.</p>
+                                </div>
+                            </li>
+
+                            <li class="step-item" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+                                <h3 itemprop="name">2. Sellado Lento y Crispy</h3>
+                                <div class="step-content" itemprop="text">
+                                    Coloca el magret en una **sartén fría** con la piel hacia abajo. Calienta a fuego
+                                    medio-bajo y deja cocinar lentamente durante **8-10 minutos** hasta que la piel esté
+                                    dorada, crujiente, y la grasa se haya derretido. Voltea el pato y séllalo por el
+                                    lado de la carne durante 2-3 minutos.
+                                </div>
+                            </li>
+
+                            <li class="step-item" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+                                <h3 itemprop="name">3. Reposo y Salsa de Oporto</h3>
+                                <div class="step-content" itemprop="text">
+                                    Retira el pato de la sartén y déjalo **reposar** sobre una tabla durante 5-7
+                                    minutos. Vierte el vino de Oporto en la sartén (desechando parte de la grasa) y
+                                    raspa los jugos caramelizados. Agrega el caldo de pollo, las cerezas y el tomillo.
+                                    Deja reducir a fuego medio-alto hasta que la salsa espese.
+                                </div>
+                            </li>
+
+                            <li class="step-item" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+                                <h3 itemprop="name">4. Finalización y Servicio</h3>
+                                <div class="step-content" itemprop="text">
+                                    Retira la rama de tomillo. Retira la sartén del fuego y añade la cucharada de
+                                    mantequilla fría, batiendo suavemente para ligar la salsa y darle brillo (Montar con
+                                    mantequilla). Corta el magret en rodajas finas y sírvelo inmediatamente vertiendo la
+                                    salsa.
+                                </div>
+                                <figure class="step-figure">
+                                    <img src="img/magret-pato-service.jpg"
+                                        alt="Magret de pato en rodajas con salsa encima." loading="lazy">
+                                </figure>
+                            </li>
+
+                        </ol>
+
+                        <div class="chef-notes premium-feature-box">
+                            <h3 class="chef-notes-title"><i class="fas fa-hat-chef"></i> Notas del Chef Pro</h3>
+                            <p>🔥 **Punto de Cocción:** Para un magret perfecto, la temperatura interna ideal debe ser
+                                de **55-58°C** (punto medio). Usa un termómetro de cocina para garantizarlo. Nunca lo
+                                cocines más allá de 60°C.</p>
+                            <p>🧈 **Grasa de Pato:** ¡No la tires! Guárdala para saltear patatas o verduras. Es el "oro
+                                blanco" de la cocina francesa. Los suscriptores Pro pueden descargar el PDF de recetas
+                                con grasa de pato.</p>
+                        </div>
+
+                        <div class="video-guide" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+                            <h2 class="video-title">Técnica de Sellado Perfecto (Video Exclusivo)</h2>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ejemplo-video-premium"
+                                title="Video de la Técnica de Sellado de Pato" frameborder="0" allowfullscreen></iframe>
+                            <meta itemprop="uploadDate" content="2024-11-05">
+                            <meta itemprop="duration" content="PT5M15S">
+                            <meta itemprop="description"
+                                content="Video tutorial paso a paso sobre la técnica de sellado a baja temperatura para Magret.">
+                        </div>
+
+                    </section>
+                </div>
+
+                <section class="pairing-box" aria-labelledby="pairing-title">
+                    <h2 id="pairing-title">Maridaje Sugerido</h2>
+                    <p>Un vino tinto de cuerpo medio a completo, como un **Pinot Noir** o un **Tempranillo Crianza**,
+                        equilibrará perfectamente la riqueza del pato y la dulzura de la salsa. También puedes optar por
+                        un **Borgoña tinto** de buena crianza.</p>
+                </section>
+
+
+            </article>
+
+            <section class="section-related-recipes" aria-labelledby="related-title">
+                <h2 id="related-title" class="section-title">Otras Recetas Chef Pro para Explorar</h2>
+                <div class="recetas-grid">
+                    <article class="receta-card">
+                        <a href="receta-premium-ejemplo.html" title="Ver la receta de Carrilleras al Vino Tinto">
+                            <figure class="receta-figure">
+                                <img src="img/carrilleras-vino-tinto-300x225.webp"
+                                    alt="Carrilleras de cerdo estofadas en vino tinto con puré cremoso." loading="lazy">
+                            </figure>
+                            <div class="receta-content">
+                                <div class="receta-meta-inline">
+                                    <span class="meta-item tag-comida">Principal</span>
+                                    <span class="meta-item tag-dificultad tag-avanzada">Avanzada</span>
+                                </div>
+                                <h3 class="card-title">Carrilleras al Vino Tinto</h3>
+                                <p class="card-description">Estofado clásico con cocción lenta y sabor profundo.</p>
+                                <div class="card-meta">
+                                    <span class="meta-item"><i aria-hidden="true">⏱</i> 3 hr</span>
+                                    <span class="meta-item"><i aria-hidden="true">⭐</i> 5.0</span>
+                                </div>
+                                <span class="cta cta-card-link cta-premium-lock">Chef Pro</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

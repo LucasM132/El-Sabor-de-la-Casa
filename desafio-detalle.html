@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío: El Reto Vegano | El Sabor de la Casa</title>
+    <meta name="description"
+        content="Participa en el Desafío 'El Reto Vegano: Postres sin Fronteras'. Gana $100 USD. Fecha límite: 3 días.">
+    <meta name="keywords" content="desafío de cocina, postres veganos, repostería vegana, concurso, receta">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+</head>
+
+<body>
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Categorías</a></li>
+                    <li><a href="receta-x.html">Recetas</a></li>
+                    <li><a href="desafios.html" aria-current="page">Desafíos</a></li>
+                    <li><a href="suscripcion-premium.html" class="cta-premium-link"><i class="fas fa-lock"
+                                aria-hidden="true"></i> Premium</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <nav aria-label="Breadcrumb" class="breadcrumbs">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="desafios.html">Desafíos</a></li>
+                <li><span aria-current="page">El Reto Vegano</span></li>
+            </ol>
+        </nav>
+
+        <section class="challenge-detail-hero" aria-labelledby="challenge-title">
+
+            <figure class="challenge-figure">
+                <img src="https://veggiefestchicago.org/wp-content/uploads/2021/04/21-carrot-cake.jpg"
+                    alt="Tarta vegana con frutas frescas, elegante y colorida." class="challenge-image">
+                <div class="challenge-overlay">
+                    <span class="challenge-tag tag-dificultad tag-media">🔪 Media</span>
+                </div>
+            </figure>
+
+            <div class="hero-content">
+                <h1 id="challenge-title">Desafío: El Reto Vegano - Postres sin Fronteras</h1>
+                <p class="summary-text">
+                    Crea el postre 100% vegano más delicioso y creativo. El jurado evaluará sabor, presentación e
+                    innovación.
+                    <br>¡Solo tienes 3 días!
+                </p>
+
+                <div class="countdown-timer" role="timer" aria-label="Tiempo restante para el desafío">
+                    <i class="far fa-clock"></i>
+                    <p>¡Quedan 03 días, 05 horas para participar!</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="detail-grid">
+
+            <div class="challenge-rules-container">
+
+                <section class="challenge-info">
+                    <h2>📝 Reglas y Criterios de Evaluación</h2>
+                    <ul class="rules-list">
+                        <li><i class="fas fa-check-circle"></i> Ingredientes: Todos los ingredientes deben ser 100% de
+                            origen vegetal (Sin lácteos, huevos, ni miel).</li>
+                        <li><i class="fas fa-check-circle"></i> Innovación: Se valora una técnica o combinación de
+                            sabores fuera de lo común.</li>
+                        <li><i class="fas fa-check-circle"></i> Presentación: La fotografía y el emplatado deben ser de
+                            alta calidad y muy apetecibles (50% de la nota).</li>
+                        <li><i class="fas fa-check-circle"></i> Receta: Si se solicita, debes poder proporcionar los
+                            pasos detallados de tu preparación.</li>
+                    </ul>
+                </section>
+
+                <section class="challenge-prize">
+                    <h2>🏆 Premio para el Ganador</h2>
+                    <div class="prize-card">
+                        <i class="fas fa-trophy prize-icon" aria-hidden="true"></i>
+                        <p class="prize-text">¡Un premio en metálico de $100 USD y la receta publicada en portada!</p>
+                        <p class="prize-date">Anuncio del ganador: Próxima Semana.</p>
+                    </div>
+                </section>
+
+                <section class="challenge-faq">
+                    <h2>❓ Preguntas Frecuentes</h2>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Puedo usar edulcorantes artificiales?</h3>
+                        <p class="faq-answer">Sí, el uso de stevia o eritritol está permitido. Lo importante es mantener
+                            la naturaleza vegana.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Tengo que publicar mi receta en mi web?</h3>
+                        <p class="faq-answer">No es obligatorio, pero si lo haces, puedes compartir el enlace en el
+                            formulario para que el jurado la revise.</p>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="challenge-submit-form" aria-labelledby="submit-title">
+                <h2 id="submit-title">🚀 Participa en el Desafío</h2>
+                <p class="submit-note">Sube tu mejor foto y la URL de tu receta (si está publicada) o los ingredientes.
+                </p>
+
+                <form id="challenge-form" action="desafio-gracias.html" method="POST" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label for="participante">Tu Nombre:</label>
+                        <input type="text" id="participante" name="participante" required
+                            placeholder="Nombre o Nickname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="url-receta">URL de tu Receta (Opcional):</label>
+                        <input type="url" id="url-receta" name="url-receta"
+                            placeholder="https://miweb.com/postre-vegano">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foto">Sube tu Mejor Foto del Plato <span class="required-star"></span>:</label>
+                        <input type="file" id="foto" name="foto" accept="image/*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje-participacion">Comentarios / Breve explicación (Máx. 200 palabras):</label>
+                        <textarea id="mensaje-participacion" name="mensaje-participacion" rows="4" maxlength="200"
+                            placeholder="Describe tu postre y el ingrediente secreto."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="premium-check" name="premium-check">
+                        <label for="premium-check">Soy suscriptor Chef Pro Premium (Doble Puntuación)</label>
+                    </div>
+
+                    <button type="submit" class="cta cta-lg cta-principal full-width">Enviar mi Participación</button>
+
+                    <p class="disclaimer-text">Al enviar, aceptas las <a href="#">bases legales del concurso</a>.</p>
+                </form>
+            </aside>
+        </div>
+
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

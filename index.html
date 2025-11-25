@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres y Repostería Casera | El Sabor de la Casa</title>
+
+    <meta name="description"
+        content="Las mejores recetas de postres y repostería, desde clásicos hasta opciones saludables.">
+    <meta name="keywords" content="recetas, postres, repostería, tartas, dulces, postres fáciles">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="categoria.html">Categorías</a></li>
+                    <li><a href="receta-x.html">Recetas</a></li>
+                    <li><a href="desafios.html">Desafíos</a></li>
+                    <li><a href="suscripcion-premium.html" class="cta-premium-link">
+                            <i class="fas fa-lock" aria-hidden="true"></i> Premium</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <section class="hero-welcome-card" aria-labelledby="welcome-title">
+                <div class="hero-text-content">
+                    <h1 id="welcome-title" class="main-title">Tu Repostería Casera, Simplificada.</h1>
+                    <p class="subtitle-text">
+                        Encuentra las mejores recetas, desde postres tradicionales hasta opciones veganas y sin gluten.
+                        ¡Hornea como un experto con nuestras guías infalibles!
+                    </p>
+                    <a href="categoria.html" class="cta cta-lg cta-secondary">Ver Recetas Destacadas</a>
+                </div>
+                <figure class="hero-image-container">
+                    <img src="img/254.jpg" alt="Tarta de chocolate recién horneada y decorada." loading="eager"
+                        width="500" height="330">
+                </figure>
+            </section>
+
+            <section class="featured-challenge-banner" aria-labelledby="featured-challenge-title">
+                <figure class="banner-figure">
+                    <img src="https://veggiefestchicago.org/wp-content/uploads/2021/04/21-carrot-cake.jpg"
+                        alt="Tarta vegana con frutas frescas, elegante y colorida." loading="lazy">
+                </figure>
+
+                <div class="banner-text-content">
+                    <span class="banner-tag">✨ Desafío de la Semana ✨</span>
+                    <h2 id="featured-challenge-title">El Reto Vegano: Postres sin Fronteras</h2>
+                    <p>
+                        Crea el postre 100% vegano más delicioso y creativo. El jurado evaluará sabor, presentación e
+                        innovación.
+                        El desafío cierra en solo 3 días.
+                    </p>
+
+                    <div class="banner-meta">
+                        <span><i class="fas fa-signal" aria-hidden="true"></i> Dificultad: Media</span>
+                        <span><i class="fas fa-trophy" aria-hidden="true"></i> Premio: $100 USD</span>
+                        <span><i class="fas fa-clock" aria-hidden="true"></i> Cierre: 3 Días</span>
+                    </div>
+
+                    <a href="desafio-detalle.html" class="cta cta-lg cta-featured">¡Últimos Días! Participar</a>
+                </div>
+            </section>
+            <section class="section-recipes-featured" aria-labelledby="recipes-featured-title">
+                <h2 id="recipes-featured-title" class="section-title">Nuestras Recetas Más Populares</h2>
+
+                <div class="recetas-grid">
+                    <article class="receta-card">
+                        <a href="receta-x.html" title="Ver la receta de Tarta de Manzana Clásica">
+                            <figure class="receta-figure">
+                                <img src="img/tarta-de-manzana.webp"
+                                    alt="Tarta de manzana horneada con rejilla, lista para servir." loading="lazy">
+                            </figure>
+                            <div class="receta-content">
+                                <div class="receta-meta-inline">
+                                    <span class="meta-item tag-comida">Postre</span>
+                                    <span class="meta-item tag-dificultad">Media</span>
+                                </div>
+                                <h3 class="card-title">Tarta de Manzana Clásica</h3>
+                                <p class="card-description">
+                                    El postre que nunca falla. Una receta tradicional con el toque secreto de la abuela.
+                                </p>
+                                <div class="card-meta">
+                                    <span class="meta-item"><i aria-hidden="true">⏱</i> 90 min</span>
+                                    <span class="meta-item"><i aria-hidden="true">⭐</i> 4.8</span>
+                                </div>
+                                <span class="cta cta-card-link">Ver Receta →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="receta-card">
+                        <a href="receta-x.html" title="Ver la receta de Mousse de Chocolate Vegano">
+                            <figure class="receta-figure">
+                                <img src="img/MOUSSE-DE-CHOCOLATE-Y-FRAMBUESAS-1.jpg"
+                                    alt="Mousse de chocolate en copas, decorado con frutos rojos." loading="lazy">
+                            </figure>
+                            <div class="receta-content">
+                                <div class="receta-meta-inline">
+                                    <span class="meta-item tag-comida">Vegano</span>
+                                    <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                                </div>
+                                <h3 class="card-title">Mousse de Chocolate Vegano</h3>
+                                <p class="card-description">
+                                    Un postre decadente, cremoso y sin lácteos. Listo en 15 minutos (más enfriado).
+                                </p>
+                                <div class="card-meta">
+                                    <span class="meta-item"><i aria-hidden="true">⏱</i> 15 min</span>
+                                    <span class="meta-item"><i aria-hidden="true">⭐</i> 4.5</span>
+                                </div>
+                                <span class="cta cta-card-link">Ver Receta →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="receta-card">
+                        <a href="receta-x.html" title="Ver la receta de Pan de Banano y Nueces">
+                            <figure class="receta-figure">
+                                <img src="img/Pan_de_Banano_Integral_con_Nueces_y_Especias.webp"
+                                    alt="Pan de banano con nueces recién horneado." loading="lazy">
+                            </figure>
+                            <div class="receta-content">
+                                <div class="receta-meta-inline">
+                                    <span class="meta-item tag-comida">Saludable</span>
+                                    <span class="meta-item tag-dificultad tag-media">Media</span>
+                                </div>
+                                <h3 class="card-title">Pan de Banano y Nueces</h3>
+                                <p class="card-description">
+                                    Aprovecha el banano maduro para un pan húmedo, nutritivo y lleno de fibra.
+                                </p>
+                                <div class="card-meta">
+                                    <span class="meta-item"><i aria-hidden="true">⏱</i> 50 min</span>
+                                    <span class="meta-item"><i aria-hidden="true">⭐</i> 4.9</span>
+                                </div>
+                                <span class="cta cta-card-link">Ver Receta →</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="text-center cta-more-recipes">
+                    <a href="categoria.html" class="cta cta-principal cta-lg">Explorar Todas las Recetas</a>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="newsletter-section" aria-labelledby="newsletter-title">
+                <div class="container">
+                    <h2 id="newsletter-title" class="section-title">No te Pierdas el Sabor de la Casa</h2>
+                    <p class="section-subtitle">
+                        Suscríbete a nuestro boletín para recibir lo mejor de la repostería.
+                    </p>
+
+                    <div class="tabs-container" role="tablist">
+                        <button role="tab" id="tab-recipes" aria-controls="panel-recipes" aria-selected="true">
+                            Recetas Semanales
+                        </button>
+                        <button role="tab" id="tab-premium" aria-controls="panel-premium" aria-selected="false">
+                            Guía Premium
+                        </button>
+                    </div>
+
+                    <div class="tab-content-wrapper">
+
+                        <div id="panel-recipes" class="tab-content" role="tabpanel" aria-labelledby="tab-recipes">
+                            <p>
+                                Recibe las 3 recetas más nuevas y populares de la semana, directamente en tu email.
+                                ¡100% gratis!
+                            </p>
+                            <form action="gracias.html" method="GET" class="form-layout newsletter-form">
+                                <div class="form-group">
+                                    <label for="email-recipes" class="sr-only">Tu Email</label>
+                                    <input type="email" id="email-recipes" name="email"
+                                        placeholder="Tu correo electrónico aquí" required>
+                                </div>
+                                <button type="submit" class="cta cta-principal full-width">
+                                    ¡Sí, Quiero Recetas!
+                                </button>
+                            </form>
+                        </div>
+
+                        <div id="panel-premium" class="tab-content hidden" role="tabpanel"
+                            aria-labelledby="tab-premium">
+                            <p>
+                                Accede a nuestra <strong>Guía Gratuita</strong> de 7 días para dominar la repostería y
+                                obtén un cupón de descuento para Premium.
+                            </p>
+                            <form action="gracias.html" method="GET" class="form-layout newsletter-form">
+                                <div class="form-group">
+                                    <label for="email-premium" class="sr-only">Tu Email</label>
+                                    <input type="email" id="email-premium" name="email"
+                                        placeholder="Tu correo electrónico (para la guía)" required>
+                                </div>
+                                <button type="submit" class="cta cta-secondary full-width">
+                                    Descargar Guía Gratuita
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="testimonios-section" aria-labelledby="testimonios-title">
+                <div class="container">
+                    <h2 id="testimonios-title">Lo que dice nuestra comunidad</h2>
+
+                    <div class="testimonios-grid">
+                        <article class="testimonio-card">
+                            <div class="testimonio-header">
+                                <div class="testimonio-avatar" aria-hidden="true">CM</div>
+                                <div class="testimonio-autor-info">
+                                    <cite class="testimonio-autor">Carla M.</cite>
+                                    <div class="testimonio-rating" aria-label="5 de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <blockquote class="testimonio-texto">
+                                "¡Increíble! Gracias a la receta de Lentejas Estofadas, mi familia volvió a disfrutar de
+                                los clásicos. Las instrucciones paso a paso son infalibles."
+                            </blockquote>
+                        </article>
+
+                        <article class="testimonio-card">
+                            <div class="testimonio-header">
+                                <div class="testimonio-avatar" aria-hidden="true">JP</div>
+                                <div class="testimonio-autor-info">
+                                    <cite class="testimonio-autor">Javier P.</cite>
+                                    <div class="testimonio-rating" aria-label="5 de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <blockquote class="testimonio-texto">
+                                "Participé en el 'Desafío Cena Flash' y fue súper divertido. Me encanta esta web,
+                                aprendí a cocinar el Salmón al Horno y quedó perfecto."
+                            </blockquote>
+                        </article>
+
+                        <article class="testimonio-card">
+                            <div class="testimonio-header">
+                                <div class="testimonio-avatar" aria-hidden="true">SL</div>
+                                <div class="testimonio-autor-info">
+                                    <cite class="testimonio-autor">Sofía L.</cite>
+                                    <div class="testimonio-rating" aria-label="5 de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <blockquote class="testimonio-texto">
+                                "La mejor página de recetas en español. La Tarta de Manzana es mi nueva especialidad.
+                                Simple, clara y con un diseño que invita a cocinar."
+                            </blockquote>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

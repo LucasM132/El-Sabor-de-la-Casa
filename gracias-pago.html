@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Pago Confirmado! | El Sabor de la Casa Premium</title>
+    <meta name="description" content="Confirmación de pago y bienvenida a la suscripción Chef Pro Premium.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/img/restaurante.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header role="banner">
+        <div class="container header-content">
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" aria-controls="main-nav" aria-expanded="false" class="menu-toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Recetas</a></li>
+                    <li><a href="suscripcion-premium.html">Premium</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container thank-you-page thank-you-paid">
+        <section class="thank-you-message message-premium-success" aria-labelledby="thank-you-title">
+
+            <span class="icon-big icon-premium-paid" aria-hidden="true">🌟</span>
+
+            <h1 id="thank-you-title" class="main-title">¡Pago Recibido y Suscripción Activa!</h1>
+
+            <p class="subtitle">
+                **¡Bienvenido a Chef Pro!** Tu cuenta Premium está ahora totalmente activada.
+            </p>
+
+            <p class="instruction">
+                Tu suscripción **Chef Pro Anual** ha sido confirmada. Hemos enviado la factura a tu correo electrónico.
+                ¡Es hora de empezar a cocinar con todas las ventajas!
+            </p>
+
+            <div class="action-buttons-group">
+                <a href="receta-premium-ejemplo.html" class="cta cta-lg cta-featured">
+                    Ver Recetas Exclusivas →
+                </a>
+                <a href="desafios.html" class="cta cta-lg cta-secondary-ghost">
+                    Ir a Desafíos de Cocina
+                </a>
+            </div>
+
+            <p class="support-info">
+                ¿Necesitas ayuda? Visita nuestra sección de soporte o contáctanos directamente.
+            </p>
+
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

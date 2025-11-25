@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Postres y Repostería | Explorar | El Sabor de la Casa</title>
+    <meta name="description"
+        content="Explora cientos de recetas de postres fáciles, tartas, pasteles, opciones veganas y sin gluten. Filtra por dificultad, tiempo y tipo de cocina.">
+    <meta name="keywords" content="recetas, postres, tartas, postres fáciles, veganas, sin gluten, filtros de receta">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">☰</button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html" aria-current="page">Categorías</a></li>
+                    <li><a href="receta-x.html">Recetas</a></li>
+                    <li><a href="desafios.html">Desafíos</a></li>
+                    <li>
+                        <a href="suscripcion-premium.html" class="cta-premium-link">
+                            <i class="fas fa-lock" aria-hidden="true"></i> Premium
+                        </a>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+
+        <div class="container">
+
+            <nav aria-label="Breadcrumb" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><span aria-current="page">Todas las Recetas</span></li>
+                </ol>
+            </nav>
+            <section class="category-hero" aria-labelledby="category-title">
+                <h1 id="category-title" class="main-title">Explora Todas Nuestras Recetas</h1>
+                <p class="category-description">
+                    Cientos de ideas, desde el desayuno hasta la cena.
+                    Usa los filtros para encontrar tu próxima especialidad.
+                </p>
+                <div class="category-search-bar">
+                    <input type="search" placeholder="Buscar por ingrediente, nombre de plato..."
+                        aria-label="Buscar recetas">
+                    <button type="submit" aria-label="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <div class="main-content-grid">
+
+                <aside class="filter-sidebar" aria-label="Filtros de recetas">
+
+                    <h2 class="sidebar-title">
+                        <i class="fas fa-filter"></i> Filtrar Resultados
+                    </h2>
+
+                    <button id="clear-filters-btn" class="cta cta-secondary full-width cta-small">
+                        Limpiar Filtros
+                    </button>
+
+                    <div class="filter-group">
+                        <h3 class="filter-group-title">Tipo de Plato</h3>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" name="tipo" value="postre"> Postres y Dulces
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" name="tipo" value="saludable"> Opciones Saludables
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" name="tipo" value="cena"> Recetas de Cena
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3 class="filter-group-title">Dificultad</h3>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" name="dificultad" value="facil"> Fácil
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" name="dificultad" value="media"> Media
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" name="dificultad" value="experto"> Experto
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3 class="filter-group-title">Tiempo (Máx.)</h3>
+                        <div class="range-container">
+                            <input type="range" id="time-range" min="15" max="180" value="180" step="15">
+                            <span class="range-value" aria-live="polite">
+                                <span id="current-time-value">180</span> min
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-cta-banner">
+                        <h3 class="cta-title">¿Quieres más?</h3>
+                        <p>Accede a recetas exclusivas y sin publicidad con Premium.</p>
+                        <a href="suscripcion-premium.html" class="cta cta-principal full-width">
+                            Ver Premium
+                        </a>
+                    </div>
+
+                </aside>
+
+                <section class="recipe-results" aria-labelledby="results-title">
+
+                    <h2 id="results-title" class="sr-only">Listado de Recetas</h2>
+
+                    <div class="sort-bar sticky-sort-bar">
+                        <p class="recipe-count">
+                            Mostrando <span id="current-count">12</span> de
+                            <span id="total-count">145</span> recetas.
+                        </p>
+
+                        <div class="sort-controls">
+                            <label for="sort-by" class="sr-only">Ordenar por:</label>
+                            <select id="sort-by" aria-label="Ordenar resultados de recetas">
+                                <option value="relevancia" selected>Relevancia</option>
+                                <option value="mas-reciente">Más Reciente</option>
+                                <option value="mejor-valorado">Mejor Valoradas</option>
+                                <option value="menor-tiempo">Menor Tiempo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="recetas-grid category-grid">
+
+                        <article class="receta-card">
+                            <a href="receta-x.html" title="Ver la receta de Tarta de Manzana Clásica">
+                                <figure class="receta-figure">
+                                    <img src="img/tarta-de-manzana-corte-entera2.jpg"
+                                        alt="Tarta de manzana recién horneada con un corte." loading="lazy">
+                                </figure>
+                                <div class="receta-content">
+                                    <div class="receta-meta-inline">
+                                        <span class="meta-item tag-comida">Postre</span>
+                                        <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                                    </div>
+                                    <h3 class="card-title">Tarta de Manzana Clásica</h3>
+                                    <p class="card-description">
+                                        La receta tradicional, con el toque perfecto de canela y una masa crujiente.
+                                    </p>
+                                    <div class="card-meta">
+                                        <span class="meta-item">
+                                            <i class="fas fa-clock"></i> 90 min
+                                        </span>
+                                        <span class="meta-item">
+                                            <i class="fas fa-star"></i> 4.8
+                                        </span>
+                                    </div>
+                                    <span class="cta cta-card-link">Ver Receta →</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="receta-card">
+                            <a href="receta-x.html" title="Ver la receta de Mousse de Chocolate">
+                                <figure class="receta-figure">
+                                    <img src="img/MOUSSE-DE-CHOCOLATE-Y-FRAMBUESAS-1.jpg"
+                                        alt="Mousse de chocolate oscuro en una copa con fresas." loading="lazy">
+                                </figure>
+                                <div class="receta-content">
+                                    <div class="receta-meta-inline">
+                                        <span class="meta-item tag-comida">Postre</span>
+                                        <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                                    </div>
+                                    <h3 class="card-title">Mousse de Chocolate Oscuro</h3>
+                                    <p class="card-description">
+                                        Un postre sedoso, intenso y ligero. Solo 3 ingredientes y sin horno.
+                                    </p>
+                                    <div class="card-meta">
+                                        <span class="meta-item"><i class="fas fa-clock"></i> 25 min</span>
+                                        <span class="meta-item"><i class="fas fa-star"></i> 4.9</span>
+                                    </div>
+                                    <span class="cta cta-card-link">Ver Receta →</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="receta-card">
+                            <a href="receta-x.html" title="Ver la receta de Tiramisú Clásico">
+                                <figure class="receta-figure">
+                                    <img src="img/delicioso-postre-tiramisú-con-cacao-y-guarnición-de-menta-sobre-plato-blanco-380600979.webp"
+                                        alt="Porción de tiramisú con cacao espolvoreado en un plato blanco."
+                                        loading="lazy">
+                                </figure>
+                                <div class="receta-content">
+                                    <div class="receta-meta-inline">
+                                        <span class="meta-item tag-comida">Postre</span>
+                                        <span class="meta-item tag-dificultad tag-dificil">Difícil</span>
+                                    </div>
+                                    <h3 class="card-title">Tiramisú Clásico Italiano</h3>
+                                    <p class="card-description">
+                                        El postre de café y mascarpone más famoso del mundo.
+                                        Para ocasiones especiales.
+                                    </p>
+                                    <div class="card-meta">
+                                        <span class="meta-item"><i class="fas fa-clock"></i> 40 min</span>
+                                        <span class="meta-item"><i class="fas fa-star"></i> 4.8</span>
+                                    </div>
+                                    <span class="cta cta-card-link">Ver Receta →</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="receta-card">
+                            <a href="receta-x.html" title="Ver la receta de Ensalada de Quinoa">
+                                <figure class="receta-figure">
+                                    <img src="img/Ensalada-de-quinoa-y-aguacate-1080x675.webp"
+                                        alt="Ensalada de quinoa con maíz, pimientos y aguacate en un bol."
+                                        loading="lazy">
+                                </figure>
+                                <div class="receta-content">
+                                    <div class="receta-meta-inline">
+                                        <span class="meta-item tag-comida tag-vegetariana">Vegetariana</span>
+                                        <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                                    </div>
+                                    <h3 class="card-title">Ensalada de Quinoa y Aguacate</h3>
+                                    <p class="card-description">
+                                        Receta saludable, fresca y completa. Ideal para una comida o cena ligera.
+                                    </p>
+                                    <div class="card-meta">
+                                        <span class="meta-item"><i class="fas fa-clock"></i> 30 min</span>
+                                        <span class="meta-item"><i class="fas fa-star"></i> 4.5</span>
+                                    </div>
+                                    <span class="cta cta-card-link">Ver Receta →</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="receta-card">
+                            <a href="receta-x.html" title="Ver la receta de Curry de Garbanzos">
+                                <figure class="receta-figure">
+                                    <img src="img/curry-de-verduras-y-garbanzos-receta-vegana.jpg"
+                                        alt="Curry de garbanzos y espinacas en un tazón servido con arroz."
+                                        loading="lazy">
+                                </figure>
+                                <div class="receta-content">
+                                    <div class="receta-meta-inline">
+                                        <span class="meta-item tag-comida tag-vegana">Vegana</span>
+                                        <span class="meta-item tag-dificultad tag-media">Media</span>
+                                    </div>
+                                    <h3 class="card-title">Curry de Garbanzos y Espinacas</h3>
+                                    <p class="card-description">
+                                        Un plato reconfortante, lleno de sabor y listo en menos de 45 minutos.
+                                    </p>
+                                    <div class="card-meta">
+                                        <span class="meta-item"><i class="fas fa-clock"></i> 45 min</span>
+                                        <span class="meta-item"><i class="fas fa-star"></i> 4.6</span>
+                                    </div>
+                                    <span class="cta cta-card-link">Ver Receta →</span>
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+
+                    <div class="pagination-controls text-center">
+                        <button class="cta cta-lg cta-secondary" aria-label="Cargar las siguientes 12 recetas">
+                            Cargar Más Recetas (12 / 145)
+                        </button>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

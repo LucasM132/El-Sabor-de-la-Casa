@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¡Gracias por Participar! | El Sabor de la Casa</title>
+    <meta name="description" content="Confirmación de participación exitosa en el desafío de cocina.">
+    <meta name="keywords" content="gracias, confirmación, desafío, participación, el sabor de la casa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+</head>
+
+<body>
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Categorías</a></li>
+                    <li><a href="receta-x.html">Recetas</a></li>
+                    <li><a href="desafios.html" aria-current="page">Desafíos</a></li>
+                    <li><a href="suscripcion-premium.html" class="cta-premium-link"><i class="fas fa-lock"
+                                aria-hidden="true"></i> Premium</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <div class="container thanks-content">
+                <div class="icon-success" aria-hidden="true">🎉</div>
+                <h1 class="main-title">¡Gracias por participar!</h1>
+                <p class="subtitle">Hemos recibido tu inscripción al desafío exitosamente. ¡Mucha suerte!</p>
+
+                <div class="next-steps-card">
+                    <h2>¿Qué sigue ahora?</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Recibirás los detalles completos del desafío en tu
+                            email.</li>
+                        <li><i class="fas fa-calendar-alt"></i> La votación se abrirá el próximo **30 de Noviembre**.
+                        </li>
+                        <li><i class="fas fa-file-alt"></i> Revisa las bases del concurso para conocer los criterios de
+                            evaluación.</li>
+                    </ul>
+                </div>
+
+                <div class="cta-group">
+                    <a href="desafios.html" class="cta cta-principal"><i class="fas fa-clipboard-list"></i> Ver Otros
+                        Desafíos</a>
+                    <a href="index.html" class="cta cta-secondary-ghost"><i class="fas fa-home"></i> Volver al
+                        Inicio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

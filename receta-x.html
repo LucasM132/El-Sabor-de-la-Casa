@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarta de Manzana Clásica Infalible | El Sabor de la Casa</title>
+    <meta name="description"
+        content="La receta tradicional de tarta de manzana con el toque perfecto de canela y una masa quebrada crujiente.">
+    <meta name="keywords" content="tarta de manzana, receta clásica, postre fácil, repostería">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/restaurante.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="receta-page">
+
+    <header role="banner" class="sticky-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">El Sabor de la Casa</a>
+
+            <button id="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" role="navigation">
+                <ul id="main-nav-list" class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html" aria-current="page">Categorías</a></li>
+                    <li><a href="receta-x.html">Recetas</a></li>
+                    <li><a href="desafios.html">Desafíos</a></li>
+                    <li><a href="suscripcion-premium.html" class="cta-premium-link"><i class="fas fa-lock"
+                                aria-hidden="true"></i> Premium</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <nav aria-label="Breadcrumb" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Postres</a></li>
+                    <li><span aria-current="page">Tarta de Manzana Clásica</span></li>
+                </ol>
+            </nav>
+
+            <article class="recipe-container" itemscope itemtype="http://schema.org/Recipe">
+
+                <div class="recipe-header" itemscope itemtype="https://schema.org/Recipe">
+
+                    <h1 class="recipe-title" itemprop="name">Tarta de Manzana Rústica con Mantequilla Dorada</h1>
+
+                    <span class="recipe-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        Receta de <span itemprop="name">Chef Ana G.</span>
+                    </span>
+
+                    <p class="recipe-summary" itemprop="description">
+                        La tarta de manzana definitiva: una <em class="key-ingredient">corteza de masa quebrada</em>
+                        hecha con mantequilla de alta
+                        calidad que se deshace en la boca, combinada con un relleno de manzanas caramelizadas con toques
+                        de canela de Ceylán y vaina de vainilla. Una receta **clásica elevada** a la perfección.
+                    </p>
+
+                    <div class="recipe-meta-data">
+                        <span class="meta-item"><i class="fas fa-hourglass-start"></i> Prep. <time itemprop="prepTime"
+                                datetime="PT30M">30 min</time></span>
+                        <span class="meta-item"><i class="fas fa-fire"></i> Cocción <time itemprop="cookTime"
+                                datetime="PT60M">60 min</time></span>
+                        <span class="meta-item"><i class="fas fa-users"></i> Porciones <span
+                                itemprop="recipeYield">8</span></span>
+                    </div>
+
+                    <div class="rating-metadata">
+                        <div class="recipe-rating" itemprop="aggregateRating" itemscope
+                            itemtype="http://schema.org/AggregateRating">
+                            <span class="stars" aria-label="Calificación de 4.9 de 5 estrellas">
+                                ⭐⭐⭐⭐⭐
+                            </span>
+                            <span itemprop="ratingValue">4.9</span>
+                            de <span itemprop="bestRating">5</span> (<span itemprop="reviewCount">125</span> votos)
+                        </div>
+                    </div>
+
+                    <div class="interactive-rating" aria-label="Califica esta receta">
+                        <span class="rating-prompt">¿Te gustó la receta? ¡Califícala!</span>
+                        <div class="interactive-stars" role="radiogroup" aria-labelledby="interactive-rating-label">
+                            <button class="star-btn" aria-label="1 estrella"><i class="far fa-star"></i></button>
+                            <button class="star-btn" aria-label="2 estrellas"><i class="far fa-star"></i></button>
+                            <button class="star-btn" aria-label="3 estrellas"><i class="far fa-star"></i></button>
+                            <button class="star-btn" aria-label="4 estrellas"><i class="far fa-star"></i></button>
+                            <button class="star-btn" aria-label="5 estrellas"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+
+                    <figure class="recipe-figure">
+                        <img src="img/tarta-de-manzana-corte-entera2.jpg"
+                            alt="Tarta de manzana rústica recién horneada con una porción cortada, mostrando el relleno de manzana."
+                            itemprop="image" loading="eager" width="800" height="533">
+                    </figure>
+                </div>
+                <div class="action-bar-float">
+                    <button id="btn-save-recipe" class="action-btn" aria-label="Guardar receta en favoritos"
+                        title="Guardar">
+                        <i class="fas fa-heart"></i> <span class="btn-text">Guardar</span>
+                    </button>
+                    <button id="btn-print-recipe" class="action-btn" aria-label="Imprimir receta" title="Imprimir">
+                        <i class="fas fa-print"></i> <span class="btn-text">Imprimir</span>
+                    </button>
+                </div>
+
+                <div class="recipe-body-grid">
+
+                    <aside class="recipe-sidebar" role="complementary">
+
+                        <div class="recipe-times-panel">
+                            <div class="servings-control">
+                                <span class="time-label">Raciones:</span>
+                                <div class="servings-input-group">
+                                    <button id="btn-decrement-servings" aria-label="Reducir raciones"
+                                        class="servings-btn">-</button>
+                                    <input type="number" id="servings-count" value="8" min="1"
+                                        data-original-servings="8" aria-live="polite" aria-label="Número de raciones">
+                                    <button id="btn-increment-servings" aria-label="Aumentar raciones"
+                                        class="servings-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ingredients-list-wrapper">
+                            <h2>Ingredientes (<span id="current-servings">8</span> Raciones)</h2>
+                            <ul id="ingredients-list" class="ingredients-list">
+                                <li itemprop="recipeIngredient" data-quantity="300" data-unit="gramos">300 gramos de
+                                    Harina de trigo (Todo Uso)</li>
+                                <li itemprop="recipeIngredient" data-quantity="150" data-unit="gramos">150 gramos de
+                                    Mantequilla fría en cubos</li>
+                                <li itemprop="recipeIngredient" data-quantity="1" data-unit="unidad">1 Huevo</li>
+                                <li itemprop="recipeIngredient" data-quantity="50" data-unit="gramos">50 gramos de
+                                    Azúcar</li>
+                                <li itemprop="recipeIngredient" data-quantity="5" data-unit="unidades">5 Manzanas
+                                    medianas (Variedad Fuji o Gala)</li>
+                                <li itemprop="recipeIngredient" data-quantity="2" data-unit="cucharaditas">2
+                                    Cucharaditas de Canela en polvo</li>
+                                <li itemprop="recipeIngredient" data-quantity="1" data-unit="cucharada">1 Cucharada de
+                                    Zumo de limón</li>
+                                <li itemprop="recipeIngredient" data-quantity="70" data-unit="gramos">70 gramos de
+                                    Azúcar Moreno</li>
+                            </ul>
+                        </div>
+
+                        <div class="nutrition-panel" itemprop="nutrition" itemscope
+                            itemtype="http://schema.org/NutritionInformation">
+                            <h3>Valor Nutricional (por ración)</h3>
+                            <ul class="nutrition-facts">
+                                <li><span class="fact-label">Calorías:</span> <span class="fact-value"
+                                        itemprop="calories">350
+                                        kcal</span></li>
+                                <li><span class="fact-label">Proteínas:</span> <span class="fact-value"
+                                        itemprop="proteinContent">5 g</span></li>
+                                <li><span class="fact-label">Grasas:</span> <span class="fact-value"
+                                        itemprop="fatContent">18
+                                        g</span></li>
+                                <li><span class="fact-label">Carbohidratos:</span> <span class="fact-value"
+                                        itemprop="carbohydrateContent">42 g</span></li>
+                            </ul>
+                            <p class="nutrition-note">Valores aproximados. Calculado para 8 raciones.</p>
+                        </div>
+                    </aside>
+
+                    <section class="recipe-instructions">
+                        <h2 id="instructions-title">Instrucciones Paso a Paso</h2>
+
+                        <ol class="steps-list" itemprop="recipeInstructions">
+
+                            <li class="step-item" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+                                <h3 itemprop="name">1. Preparar la Masa Quebrada</h3>
+                                <div class="step-content">
+                                    <p itemprop="text">En un bol grande, mezcla la harina y el azúcar. Añade la
+                                        mantequilla fría en cubos y trabaja la mezcla con los dedos hasta obtener una
+                                        textura de arena gruesa (arenado).</p>
+                                    <p>Añade el huevo y el agua fría. Amasa lo justo para que se una. Envuelve la masa
+                                        en film y refrigera por 30 minutos.</p>
+                                </div>
+
+                                <figure class="recipe-figure2">
+                                    <img src="img/masa-de-tarta.png.webp"
+                                        alt="Tarta de manzana recién horneada con un corte." itemprop="image"
+                                        loading="eager" width="800" height="533">
+                                </figure>
+                            </li>
+
+                            <li class="step-item" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+                                <h3 itemprop="name">2. Preparar el Relleno</h3>
+                                <div class="step-content" itemprop="text">
+                                    Pela, descorazona y corta las manzanas en láminas finas. Colócalas en un bol con el
+                                    azúcar moreno, la canela, la vainilla y el zumo de limón. Mezcla bien y deja
+                                    reposar.
+                                </div>
+                            </li>
+
+                            <li class="step-item" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+                                <h3 itemprop="name">3. Ensamblar y Hornear</h3>
+                                <div class="step-content" itemprop="text">
+                                    Precalienta el horno a 180°C (350°F). Estira dos tercios de la masa y cubre un
+                                    molde. Rellena con las manzanas. Con el tercio restante, haz una rejilla o una tapa
+                                    simple. Hornea durante 50-60 minutos o hasta que la masa esté dorada y el relleno
+                                    burbujee.
+                                </div>
+                            </li>
+
+                        </ol>
+
+                        <div class="chef-notes">
+                            <h3 class="chef-notes-title"><i class="fas fa-lightbulb"></i> Notas del Chef</h3>
+                            <p>Para una masa más crujiente, sustituye un poco del agua por vodka frío. Esto evita que el
+                                gluten se desarrolle demasiado. Si quieres un brillo perfecto, barniza la rejilla con
+                                huevo batido justo antes de hornear.</p>
+                        </div>
+
+                        <div class="video-guide" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+                            <h2 class="video-title">Video Guía de la Masa</h2>
+
+                            <video controls width="100%" height="315" title="Video de la Masa Quebrada"
+                                poster="img/tarta-de-manzana.webp">
+                                <source
+                                    src="img/Tarta de manzana  Receta fácil  Mi tarta preferida - Mi tarta preferida (360p, h264).mp4"
+                                    type="video/mp4">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
+
+                            <meta itemprop="uploadDate" content="2024-11-05">
+                            <meta itemprop="duration" content="PT3M30S">
+                            <meta itemprop="description" content="Tutorial rápido para hacer la masa perfecta.">
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+
+            <section class="section-related-recipes" aria-labelledby="related-title">
+                <h2 id="related-title" class="section-title">Otras Recetas de Postres que Amamos 🍰</h2>
+
+                <div class="recetas-carousel">
+
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/interior-del-lemon-pie.jpg" alt="Tarta de limón con merengue flameado."
+                                loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Postre</span>
+                                <span class="meta-item tag-dificultad tag-media">Media</span>
+                            </div>
+                            <h3 class="card-title">Tarta de Limón y Merengue</h3>
+                            <p class="card-description">El equilibrio perfecto entre ácido y dulce. Un postre
+                                elegante.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 60 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 4.7</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/tartadecafe.png"
+                                alt="Tarta de chocolate oscuro con glaseado y granos de café." loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Postre</span>
+                                <span class="meta-item tag-dificultad tag-dificil">Difícil</span>
+                            </div>
+                            <h3 class="card-title">Tarta Selva Negra Clásica</h3>
+                            <p class="card-description">Capas de bizcocho de chocolate, cerezas y crema. Ideal para
+                                expertos.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 90 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 4.9</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/blog_5.webp" alt="Cheesecake horneado cubierto con mermelada de frutos rojos."
+                                loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Postre</span>
+                                <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                            </div>
+                            <h3 class="card-title">Cheesecake Cremoso al Horno</h3>
+                            <p class="card-description">Base de galleta crujiente y un relleno de queso
+                                increíblemente suave.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 120 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 4.5</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/photo.jpg" alt="Brownies cortados con corteza brillante y centro fudge."
+                                loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Postre</span>
+                                <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                            </div>
+                            <h3 class="card-title">Brownies Fudge (Doble Chocolate)</h3>
+                            <p class="card-description">Máxima intensidad de cacao. Perfectos, húmedos y con corteza
+                                brillante.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 45 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 4.8</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/mousse-de-mango-receta-postre-tropical.webp"
+                                alt="Mousse de mango cremoso con hojas de menta." loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Postre Frío</span>
+                                <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                            </div>
+                            <h3 class="card-title">Mousse de Mango y Maracuyá</h3>
+                            <p class="card-description">Un postre sin horno, ligero y tropical. Ideal para el
+                                verano.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 30 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 4.6</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/banana.png" alt="Rebanadas de pan de plátano con nueces." loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Panadería</span>
+                                <span class="meta-item tag-dificultad tag-media">Media</span>
+                            </div>
+                            <h3 class="card-title">Pan de Plátano Húmedo y Rústico</h3>
+                            <p class="card-description">El mejor uso para esos plátanos maduros. Con trozos de nuez
+                                y canela.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 75 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 4.8</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/Alf-maicena-3-Large.jpg"
+                                alt="Alfajores de maicena rellenos de dulce de leche y coco rallado." loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Repostería</span>
+                                <span class="meta-item tag-dificultad tag-facil">Fácil</span>
+                            </div>
+                            <h3 class="card-title">Alfajores de Maicena y Dulce de Leche</h3>
+                            <p class="card-description">La galleta argentina que se derrite en la boca. Sabor a
+                                tradición.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 50 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 5.0</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+
+                    <article class="receta-card">
+                        <figure class="receta-figure">
+                            <img src="img/creme-brulee-receta-el-clasico-postre-textura-suavez-y-sedosa.webp"
+                                alt="Crème brûlée con una capa de caramelo recién flameado." loading="lazy">
+                        </figure>
+                        <div class="receta-content">
+                            <div class="receta-meta-inline">
+                                <span class="meta-item tag-comida">Postre Francés</span>
+                                <span class="meta-item tag-dificultad tag-dificil">Difícil</span>
+                            </div>
+                            <h3 class="card-title">Crème Brûlée Clásica con Vainilla</h3>
+                            <p class="card-description">Postre sofisticado con una crema sedosa y un crujiente de
+                                caramelo.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i aria-hidden="true">⏱</i> 80 min</span>
+                                <span class="meta-item"><i aria-hidden="true">⭐</i> 4.9</span>
+                            </div>
+                            <span class="cta cta-card-link">Ver Receta →</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="carousel-nav-buttons">
+                    <button class="nav-btn prev-btn" aria-label="Receta Anterior">❮</button>
+                    <button class="nav-btn next-btn" aria-label="Receta Siguiente">❯</button>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 El Sabor de la Casa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+                <a href="contacto.html">Colabora con nosotros</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
